@@ -1,2 +1,3 @@
 .idea/
 target/
+src/main/java/com/pedro/plc/collector/data/schemas/source/
