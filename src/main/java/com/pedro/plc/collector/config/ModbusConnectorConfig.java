@@ -7,7 +7,7 @@ import lombok.Setter;
 @Getter
 @Setter
 public class ModbusConnectorConfig {
-    private static final String HOST = "172.25.19.6";
+    private static final String HOST = "<YOUR-MODBUS-IP-ADDRESS>";
     private static final int PORT = 502;
     public static final int UNIT_ID = 1;
     public static ModbusConnectorConfig instance = new ModbusConnectorConfig();
