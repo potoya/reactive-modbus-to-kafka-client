@@ -28,7 +28,7 @@
               "type": "string"
             },
             {
-              "name": "value",
+              "name": "valor",
               "type": "float"
             }
           ]
