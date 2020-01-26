@@ -1,6 +1,7 @@
 package com.pedro.plc.collector;
 
-import com.pedro.plc.collector.modbus.ModbusConnector;
+import com.pedro.plc.collector.domain.entity.ModbusDevice;
+import com.pedro.plc.collector.infrastructure.modbus.ModbusConnector;
 import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -12,7 +13,7 @@ public class Application {
     public static void main(String[] args) {
         log.info("Starting plc collector");
 
-        new ModbusConnector().start();
+        new ModbusConnector(ModbusDevice.getInstance()).start();
     }
 
 }
